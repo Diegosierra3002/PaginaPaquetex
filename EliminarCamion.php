@@ -1,12 +1,12 @@
 <?php
 		include 'inicioCamionero.php';
 		include 'conexionBD.php';
-		$sqlConductor = "select * from conductor";
-		$datosConductor = $conexion->query($sqlConductor) or die ("Error Interno...");
-		$Conductor = $datosConductor;
-		
-	?>
+		$sqlCamiones= "select * from Camiones";
+		$datosCamiones = $conexion->query($sqlCamiones) or die ("Error Interno...");
 
+	?>
+	
+	
 	<html>
 	<div class="container">
 		<head>
@@ -16,20 +16,16 @@
 </svg>
 		</head>
 		<body style= "background-color:EFEFEF";>
-			<form action="EliminacionDefinitiva.php" method="POST">
+			<form action="EliminacionDefinitivaCamion.php" method="POST">
 			<div class="mb-3">				
 				<table class="table">
   <thead>
     <tr>
-      <th scope="col">Cedula</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">telefono</th>
-      <th scope="col">direccion</th>
-      <th scope="col">salario</th>
-      <th scope="col">Municipio</th>
-      <th scope="col" >Matricula</th>
+      <th scope="col">Matricula</th>
+      <th scope="col">Modelo</th>
+      <th scope="col">tipo</th>
+      <th scope="col">potencia</th>
       <th scope="col" >Eliminar</th>
-
     </tr>
 </svg>
   </thead>
@@ -37,39 +33,16 @@
 			<!--En php generar un ciclo mientras que traiga todos los datos de datosConductor -->
 			<?php
 
-					while($fila = $datosConductor->fetch_array()):
+					while($fila = $datosCamiones->fetch_array()):
 						echo "
 					    <tr>
-					  <th scope='row'>$fila[id_conductor]</th>
-					  <td>$fila[nombre]</td>
-					  <td>$fila[telefono]</td>
-					  <td>$fila[direccion]</td>
-					  <td>$fila[salario]</td>
-					  <td>$fila[municipio]</td>
-					  <td>$fila[matricula]</td>
-					<th><button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#exampleModal$fila[id_conductor]'>
+					  <th scope='row'>$fila[id_camiones]</th>
+					  <td>$fila[modelo]</td>
+					  <td>$fila[tipo]</td>
+					  <td>$fila[potencia]</td>
+					<th><button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#exampleModal'>
 			  Eliminar
-			</button>
-			<i class='bi bi-trash'></i></th></option>
-			
-			<!-- Modal -->
-<div class='modal fade' id='exampleModal$fila[id_conductor]' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
-  <div class='modal-dialog'>
-    <div class='modal-content'>
-      <div class='modal-header'>
-        <h5 class='modal-title' style='color:red' id='exampleModalLabel'>Atencion!!!</h5>
-        <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
-      </div>
-      <div class='modal-body'>
-        No se Recuperaran los datos. ¿Esta seguro De Eliminar?
-      </div>
-      <div class='modal-footer'>
-        <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cancelar</button>
-        <button type='sudmit' method='post' class='btn btn-danger'>Confirmar eliminación</button>
-      </div>
-    </div>
-  </div>
-</div>
+			</button><i class='bi bi-trash'></i></th></option>
 						";
 						
 					endwhile;

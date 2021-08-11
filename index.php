@@ -9,10 +9,18 @@
 		include 'inicioIndex.php';	
 	?>
 	
-	<body style= "background-color:E8E8E8";>
-		<h1 class="text-center" style = "margin-top:50px;">Sistema Administrador De Entrega De Paquetes</h1>
-		<h2 class="text-center" style = "margin-top:50px;">PaqueteX</h2>
-		<h4 class="text-center" style = "margin-top:50px;">Administración Entrega De Paquetes, Entregas Contra Reloj Con La Mejor Calidad.</h4>
+	<body style= "background-color:EFEFEF";>
+	</br>
+	</br>
+		<h1 class="text-center" style ="color:" align="margin-top:50px;">Sistema Administrador De Entrega De Paquetes</h1>
+		</br>
+		</br>
+		<h2 class="text-center" style ="color:" align="margin-top:50px;">PaqueteX</h2>
+		</br>
+		</br>
+		<h4 class="text-center" style ="color:" align="margin-top:50px;">Administración Entrega De Paquetes, Entregas Contra Reloj Con La Mejor Calidad.</h4>
+		</br>
+		</br>
 	</body>
 </html>
 <br>

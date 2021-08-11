@@ -4,6 +4,8 @@
 		<i class="bi bi-door-open-fill"></i>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="icon" type="image/png" href="img/Favicon/MiFaviconP.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </head>
 	
 <body>
@@ -32,7 +34,17 @@
 					<a href="VerCamiones.php"<button style="margin: 10px" type="button" class="btn btn-success">Registrar Camiones</button></a>
 					<a href="VerPaquetes.php"<button style="margin: 10px" type="button" class="btn btn-success">Registrar Paquetes</button></a>
 					<a href="AdministrarEnvios.php"<button style="margin: 10px" type="button" class="btn btn-success">Generar Envios</button></a>
-					<a href="EliminarCamionero.php"<button style="margin: 10px" type="button" class="btn btn-outline-danger">Eliminar Camionero</button> </a>
+			
+			<div class="dropdown">
+			  <button class="btn btn-outline-Danger dropdown-toggle" style="margin: 10px" type="button" class="btn btn-outline-danger" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+				 Eliminar
+			  
+			  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+  <a href="EliminarCamionero.php"<button style="margin: 10px" type="button" class="btn btn-outline">Eliminar Camionero</button> </a>
+  <a href="EliminarCamion.php"<button style="margin: 10px" type="button" class="btn btn-outline">Eliminar Camion</button> </a>
+  </ul>
+</div>
 			</ul>
 			<ul class='navbar-nav me-auto mb-2 mb-lg-0 text-end'>
 				<li class="nav-item">

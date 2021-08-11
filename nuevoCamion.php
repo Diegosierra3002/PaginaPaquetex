@@ -39,13 +39,16 @@
 					'$_REQUEST[txtModelo]',
 					'$_REQUEST[txtTipo]',
 					'$_REQUEST[txtPotencia]',
-					'$archivo;
-					 )";
+					'$archivo'
+					 );";
+					 
 					 //FALTA EJECUTAR CONSULTA!!!!
+					 echo $sql;
+ $datos = $conexion->query($sql) or die ("Error Interno...");
 			header('location: index.php');
         }
         else {
-            echo "Error interno del sistema, contacte al administrador";
+            echo "no se pudo copiar el archivo";
         }
     }
     else {
@@ -56,8 +59,7 @@
   
   
 
- echo $sql;
- $datos = $conexion->query($sql) or die ("Error Interno...");
+ 
 
 ?>
 

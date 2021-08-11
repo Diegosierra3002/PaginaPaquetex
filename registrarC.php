@@ -6,13 +6,13 @@
 		include 'inicioCamionero.php';	
 	?>
 	
-<body style= "background-color:E8E8E8";>
+<body style= "background-color:EFEFEF";>
 <div class="container">
 			<h1 style="margin-top: 20px;">Formulario Registro De Camioneros</h1>
 
 			<form action="nuevoCamionero.php" method="POST">
 		<div class="mb-3">
-              <label for="txtIDcamionero" class="form-label">Cedula</label>
+              <label  for="txtIDcamionero" class="form-label" >Cedula</label>
               <input type="text" name="txtIDcamionero" class="form-control" id="txtcedula"required>
         </div>
 		<div class="mb-3">

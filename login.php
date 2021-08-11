@@ -25,10 +25,16 @@ if (isset($_SESSION['login'])){
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <title>Inicio de sesión</title>
 </head>
-<body style= "background-color:E8E8E8";>
+<body style= "background-color:EFEFEF";>
 <div class="container">
-<h1 class="text-center" style = "margin-top:50px;">Sistema Administrador De Entrega De Paquetes</h1>
-<h2 class="text-center">Inicio de seción</h1>
+</br>
+</br>
+</br>
+<h1 class="text-center" style ="color:" align="margin-top:50px;">Sistema Administrador De Entrega De Paquetes</h1>
+<h2 class="text-center" style ="color:" align="margin-top:50px;">Inicio de seción</h1>
+</br>
+</br>
+</br>
 <form method="post" action="loginSecion.php">
 <div class="mb-3">
     <label for="InputCed1" class="form-label">Usuario</label>
