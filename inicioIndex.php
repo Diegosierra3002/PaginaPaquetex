@@ -21,9 +21,9 @@
 						<li class="nav-item dropdown">
 						</li>
 					<br>
-						<a href="login.php"<button type="button" style="margin: 10px" class="btn btn-success">Iniciar Seccion</button></a>
+						<a href="login.php"<button type="button" style="margin: 10px" class="btn btn-success">Iniciar Sesión</button></a>
 						</ul>
-						<a href="Documentos/ManualDeUsuarioPaquetex.pptx"><button type="button" class="btn btn-outline-success">Manual De Usuario</button></a>
+						<a href="Documentos/PaquetexManualDeUsuario.pptx"><button type="button" class="btn btn-outline-success">Manual De Usuario</button></a>
 				</div>
 		</div>
 	</nav>

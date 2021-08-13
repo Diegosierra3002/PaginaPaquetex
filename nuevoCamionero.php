@@ -34,8 +34,12 @@ $_REQUEST[txtSalario],
 
 ?>
 
+<div class="alert alert-success" role="alert">
+  Registro Exitoso¡
+</div>
 <?php	
 	require_once "pieDePagina.php";
 ?>
 
 </div>
+</html>

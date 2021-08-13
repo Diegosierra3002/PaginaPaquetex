@@ -1,8 +1,10 @@
 <?php
+		session_start();
 		include 'inicioLogin.php';	
+		
 	?>
 <?php
-session_start();
+
 
 if (isset($_SESSION['login'])){
 	echo ''.$_SESSION['login'];

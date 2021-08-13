@@ -10,11 +10,9 @@
 	?>
 	<html>
 	<head>
-		
 	</head>
 	</html>
 <div class="container">
-	
 <?php
     $tipoImagen = $_FILES['txtarchivo']['type'];
 	$rutaImagen = "img/";
@@ -45,7 +43,7 @@
 					 //FALTA EJECUTAR CONSULTA!!!!
 					 echo $sql;
  $datos = $conexion->query($sql) or die ("Error Interno...");
-			header('location: index.php');
+			header('location: NuevoCamion.php');
         }
         else {
             echo "no se pudo copiar el archivo";
